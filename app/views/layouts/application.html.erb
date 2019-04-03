@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hirely</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Playfair+Display+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  </head>
+
+  <body>
+
+
+    <nav class="navbar navbar-light">
+
+  <% if current_user.present? %>
+
+<div class="logo_wrapper">
+
+  <div class="logo-container">
+    <%= image_tag src="sewing-machine.png", height: "45px", class:"logo_icon"%>
+      <%= link_to image_tag("logo4.png", height: "100px"), menu_path, class:"navbar-brand logo" %>
+  </div>
+  <% else %>
+  <div class="logo-container">
+    <%= image_tag src="sewing-machine.png", height: "45px", class:"logo_icon" %>
+      <%= link_to image_tag("logo4.png", height: "100px"), root_path, class:"navbar-brand logo" %>
+  </div>
+  <% end  %>
+
+</div>
+
+          <ul class="nav justify-content-end">
+
+      <% if current_user.present? %>
+
+        <li class="nav-item">
+          <%= link_to "Add Item", new_item_path, class:"nav-link active" %>
+        </li>
+        <li class="nav-item">
+          <%= link_to "All Items", items_path, class:"nav-link active" %>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="user_path" role="button" aria-haspopup="true" aria-expanded="false">Profile</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#"></a>
+                <%= link_to "#{current_user.first_name.capitalize}", user_path(current_user.id), class:"dropdown-item" %>
+              <%= link_to "Log out", logout_path, method: :delete, class:"dropdown-item" %>
+          </div>
+        </li>
+
+        <%else  %>
+
+
+        <% end %>
+      </ul>
+
+        </nav>
+
+
+
+        <div class="container body_wrapper">
+
+          <%= render 'flash_messages' %>
+          <%= yield %>
+        </div>
+
+
+
+
+  </body>
+
+  <footer class="text-center page_footer">
+  <div class="footer-above">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col col-md-4">
+          <h3>Location</h3>
+          <p>131 Finsbury Pavement, <br>London, <br> EC2A 1NT
+            </p>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3>Around the Web</h3>
+          <ul class="list-inline">
+            <!-- some social networks -->
+            <%= image_tag src="facebook-logo-button.png", height: "30px" %>
+            <%= image_tag src="linkedin-logo-button.png", height: "30px" %>
+            <%= image_tag src="google-plus-logo-button.png", height: "30px" %>
+            <%= image_tag src="twitter-logo-button.png", height: "30px" %>
+            <%= image_tag src="tumblr-logo-button.png", height: "30px" %>
+          </ul>
+        </div>
+        <div class="footer-col col-md-4">
+          <h3>About Hirely</h3>
+          <p>Hirely is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-below">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          Copyright &copy; Saphymat
+          <?php echo date( "Y"); ?>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>

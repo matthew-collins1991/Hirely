@@ -1,0 +1,16 @@
+{
+  "name": "hirely",
+  "private": true,
+  "dependencies": {}
+},
+{
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-pgbouncer"
+    },
+    {
+      "url": "heroku/ruby"
+    }
+  ]
+}
+
