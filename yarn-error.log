@@ -2,7 +2,7 @@ Arguments:
   /Users/Matt/.nvm/versions/node/v11.6.0/bin/node /Users/Matt/.nvm/versions/node/v11.6.0/bin/yarn global bin
 
 PATH: 
-  /Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/opt/imagemagick@6/bin:/Users/Matt/.nvm/versions/node/v11.6.0/bin:/Users/Matt/.rvm/gems/ruby-2.3.3/bin:/Users/Matt/.rvm/gems/ruby-2.3.3@global/bin:/Users/Matt/.rvm/rubies/ruby-2.3.3/bin:/Users/Matt/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/opt/imagemagick@6/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/sbin:info If you think this is a bug, please open a bug report with the information provided in "/Users/Matt/flatiron/Hirely/yarn-error.log".
+  /Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/opt/imagemagick@6/bin:/Users/Matt/.nvm/versions/node/v11.6.0/bin:/Users/Matt/.rvm/gems/ruby-2.4.1/bin:/Users/Matt/.rvm/gems/ruby-2.4.1@global/bin:/Users/Matt/.rvm/rubies/ruby-2.4.1/bin:/Users/Matt/.rvm/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Visual Studio Code.app/Contents/Resources/app/bin:/usr/local/opt/imagemagick@6/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local:/usr/local/sbin:info If you think this is a bug, please open a bug report with the information provided in "/Users/Matt/flatiron/Hirely/yarn-error.log".
   info Visit https://yarnpkg.com/en/docs/cli/global for documentation about this command.
 
 Yarn version: 

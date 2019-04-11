@@ -39,9 +39,7 @@ class UsersController < ApplicationController
         redirect_to @user, success: "#{@user.first_name.capitalize} your profile has sucessfully been updated"
       else
         # flash[:error] = ["update unsucessful"]
-
         redirect_to edit_user_path(@user), danger: "Update unsuccessful"
-
       end
     end
 
